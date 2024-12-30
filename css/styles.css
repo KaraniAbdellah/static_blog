@@ -122,20 +122,30 @@ section .recent_post {
 /* Start Footer */
 footer {
     background-color: rgb(0, 255, 17);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
 }
 footer .about_blog {
-    <h2>BlogName</h2>
-                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Soluta, voluptatum.</p>
-                <strong>address</strong>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores, velit!</p>
-                
+    background-color: blue;
 }
-footer .topics {
-
-}
-footer .feedback{
+footer .about_blog h2 {
     
 }
 
+footer .topics {
+    background-color: white;
+}
+footer .feedback {
+    background-color: yellow;
+}
+footer .feedback .inputs {
+
+}
+footer .feedback .inputs input {
+    display: block;
+    margin: 10px;
+}
 /* End Footer */
 
