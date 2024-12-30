@@ -1,1 +1,14 @@
 /* Start Helpers Classes */
+
+.subscribe {
+    background-image: linear-gradient(to right, #1FA2FF 0%, #12D8FA  51%, #1FA2FF  100%);
+    padding: 10px 20px;
+    color: white;
+    font-weight: 600;
+    border-radius: 5px;
+}
+
+/* End Helpers Classes */
+
+
+

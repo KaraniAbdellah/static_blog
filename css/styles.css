@@ -1,1 +1,71 @@
 /* Start Styling Here */
+
+
+
+/* Start Global Roles */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+ul {
+    list-style: none;
+}
+
+:root {
+    --aqua-green: #14b7c7;
+    --slate-red: #53748a;
+    --deep-blue: #1b394c;
+    --midnight-yellow: #101a2c;
+}
+
+body {
+    background-image: linear-gradient(to right, #232d60, #3f429c);
+    font-family: "Roboto", serif;
+    font-weight: normal;
+}
+  
+.container {
+    margin: 20px 60px;
+}
+
+button {
+    border: none;
+    cursor: pointer;
+}
+/* End Global Roles */
+
+
+/* Start Header */
+header {
+    width: 60px;
+}
+header .logo {
+
+}
+header ul {
+
+}
+header ul li {
+    
+}
+
+
+
+/* End Header */
+
+/* Start Section */
+/* End Section */
+
+
+/* Start Footer */
+
+
+/* End Footer */
+
