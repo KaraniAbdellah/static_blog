@@ -19,53 +19,123 @@ ul {
 }
 
 :root {
-    --aqua-green: #14b7c7;
-    --slate-red: #53748a;
-    --deep-blue: #1b394c;
-    --midnight-yellow: #101a2c;
+    --aqua-color: #14b7c7;
+    --slate-color: #53748a;
+    --deep-color: #1b394c;
+    --midnight-color: #101a2c;
+    --grey-color: #e8e8e8;
+    --border-radius: 5px;
 }
 
 body {
-    background-image: linear-gradient(to right, #232d60, #3f429c);
+    /* background-image: linear-gradient(to right, #232d60, #3f429c); */
+    background-color: white;
     font-family: "Roboto", serif;
     font-weight: normal;
 }
   
 .container {
-    margin: 20px 60px;
+    margin: 20px 100px;
 }
 
 button {
     border: none;
     cursor: pointer;
 }
+
+input {
+    outline: 0;
+    border: 0;
+}
+
 /* End Global Roles */
 
 
 /* Start Header */
 header {
-    width: 60px;
+    height: 60px;
+    background-color: #14b7c7;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    margin-bottom: 50px;
+}
+header::before {
+
 }
 header .logo {
-
+    color: #101a2c;
+    font-size: 22px;
 }
 header ul {
-
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 header ul li {
-    
+    margin-right: 10px;
+    cursor: pointer;
 }
-
-
 
 /* End Header */
 
 /* Start Section */
+section {
+    background-color: red;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 50px;
+}
+section .about_me {
+    margin: 20px auto;
+    width: 50%;
+    text-align: center;
+}
+section .about_me p.name {
+    font-size: 50px;
+    font-weight: bold;
+}
+section .about_me p.desc {
+    color: var(--grey-color);
+    margin: 10px 0 30px;
+    font-size: 18px;
+}
+section .about_me .email {
+    background-color: var(--grey-color);
+    border-radius: var(--border-radius);
+    display: flex;
+    padding: 10px;
+    border: 1px solid var(--aqua-color);
+    margin-bottom: 50px;
+}
+section .about_me .email input {
+    width: 100%;
+    background-color: var(--grey-color);
+}
+section .recent_post {
+    text-align: center;
+}
 /* End Section */
 
 
 /* Start Footer */
+footer {
+    background-color: rgb(0, 255, 17);
+}
+footer .about_blog {
+    <h2>BlogName</h2>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Soluta, voluptatum.</p>
+                <strong>address</strong>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores, velit!</p>
+                
+}
+footer .topics {
 
+}
+footer .feedback{
+    
+}
 
 /* End Footer */
 
