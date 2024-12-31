@@ -2,6 +2,7 @@
 
 .subscribe {
     background-image: linear-gradient(to right, #1FA2FF 0%, #12D8FA  51%, #1FA2FF  100%);
+    font-family: 'Fira Code', Monaco, Consolas, Ubuntu Mono, monospace;
     padding: 10px 20px;
     color: white;
     font-weight: 600;

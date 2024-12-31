@@ -23,14 +23,16 @@ ul {
     --slate-color: #53748a;
     --deep-color: #1b394c;
     --midnight-color: #101a2c;
-    --grey-color: #e8e8e8;
+    --grey-color: #c1c1c1;
+    --grey-light-color: #efefef;
+    --black-color: #444;
     --border-radius: 5px;
 }
 
 body {
     /* background-image: linear-gradient(to right, #232d60, #3f429c); */
     background-color: white;
-    font-family: "Roboto", serif;
+    font-family: 'Fira Code', Monaco, Consolas, Ubuntu Mono, monospace;
     font-weight: normal;
 }
   
@@ -54,18 +56,20 @@ input {
 /* Start Header */
 header {
     height: 60px;
-    background-color: #14b7c7;
+    background-color: #defcffa2;
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 10px;
-    margin-bottom: 50px;
+    margin-bottom: 60px;
+    color: var(--black-color);
+    border-radius: var(--border-radius);
 }
 header::before {
 
 }
 header .logo {
-    color: #101a2c;
+    color: var(--black-color);
     font-size: 22px;
 }
 header ul {
@@ -74,18 +78,19 @@ header ul {
     align-items: center;
 }
 header ul li {
-    margin-right: 10px;
+    margin-right: 15px;
     cursor: pointer;
+    color: var(--black-color);
 }
 
 /* End Header */
 
 /* Start Section */
 section {
-    background-color: red;
+    background-color: rgb(255, 255, 255);
     display: flex;
     flex-direction: column;
-    margin-bottom: 50px;
+    margin-bottom: 40px;
 }
 section .about_me {
     margin: 20px auto;
@@ -95,6 +100,7 @@ section .about_me {
 section .about_me p.name {
     font-size: 50px;
     font-weight: bold;
+    color: var(--black-color);
 }
 section .about_me p.desc {
     color: var(--grey-color);
@@ -102,16 +108,21 @@ section .about_me p.desc {
     font-size: 18px;
 }
 section .about_me .email {
-    background-color: var(--grey-color);
+    background-color: var(--grey-light-color);
     border-radius: var(--border-radius);
     display: flex;
     padding: 10px;
-    border: 1px solid var(--aqua-color);
     margin-bottom: 50px;
+}
+section .about_me .email:hover {
+    box-shadow: var(--aqua-color) 0px 1px 3px, var(--aqua-color)px 1px 2px;
 }
 section .about_me .email input {
     width: 100%;
-    background-color: var(--grey-color);
+    background-color: var(--grey-light-color);
+}
+section .about_me .email input::placeholder {
+    color: var(--black-color);
 }
 section .recent_post {
     text-align: center;
