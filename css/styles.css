@@ -56,7 +56,6 @@ input {
 /* Start Header */
 header {
     height: 60px;
-    background-color: #defcffa2;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -90,7 +89,7 @@ section {
     background-color: rgb(255, 255, 255);
     display: flex;
     flex-direction: column;
-    margin-bottom: 40px;
+    margin-bottom: 100px;
 }
 section .about_me {
     margin: 20px auto;
@@ -122,10 +121,75 @@ section .about_me .email input {
     background-color: var(--grey-light-color);
 }
 section .about_me .email input::placeholder {
+    font-family: 'Fira Code', Monaco, Consolas, Ubuntu Mono, monospace;
     color: var(--black-color);
+    font-size: 13px;
+    word-spacing: 0px;
 }
 section .recent_post {
+    margin: 40px 0;
+    padding: 20px;
     text-align: center;
+}
+section .recent_post h1 {
+    color: var(--black-color);
+    margin-bottom: 30px;
+}
+section .recent_post .cards {
+    display: flex;
+    justify-content: space-around;
+    gap: 10px;
+    text-align: left !important;
+}
+.cards .card {
+    border-radius: var(--border-radius);
+    background-color: rgb(247, 247, 247);
+    width: 300px;
+    height: 100%;
+    padding: 10px;
+} 
+.cards .card .image img {
+    border-radius: var(--border-radius) var(--border-radius)  0 0;
+    width: 100%;
+    background-image: cover;
+    background-color: green;
+}
+.cards .card .date {
+    margin: 6px 0;
+    color: rgb(255, 73, 155);
+    font-weight: bold;
+    font-size: 14px;
+}
+.cards .card .info {
+
+}
+.cards .card .info .title {
+    font-weight: bold;
+    margin-bottom: 6px;
+    font-size: 20px;
+    color: var(--black-color);
+} 
+.cards .card .info .description {
+    color: var(--grey-color);
+    font-weight: 100;
+    font-size: 15px;
+}
+.cards .card .tags {
+    margin-top: 10px;
+}
+.cards .card .tags button {
+    padding: 5px 8px;
+    border-radius: var(--border-radius);
+    font-size: 12px;
+    font-weight: bold;
+}
+.recent_post button.load_more {
+    margin: 30px 0;
+    padding: 5px 8px;
+    border-radius: var(--border-radius);
+    font-family: 'Fira Code', Monaco, Consolas, Ubuntu Mono, monospace;
+    background-color: #95d3fff2;
+    color: white;
 }
 /* End Section */
 
@@ -158,5 +222,6 @@ footer .feedback .inputs input {
     display: block;
     margin: 10px;
 }
+
 /* End Footer */
 

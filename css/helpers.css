@@ -1,13 +1,29 @@
 /* Start Helpers Classes */
 
 .subscribe {
-    background-image: linear-gradient(to right, #1FA2FF 0%, #12D8FA  51%, #1FA2FF  100%);
+    background-image: linear-gradient(to right, #b2dfff 0%, #88ceffc4  51%, #95d3fff2 100%);
     font-family: 'Fira Code', Monaco, Consolas, Ubuntu Mono, monospace;
     padding: 10px 20px;
     color: white;
     font-weight: 600;
     border-radius: 5px;
 }
+
+.blue-btn-tag {
+    color: #4aa4df;
+    background-color: #a2c8f924;
+}
+
+.red-btn-tag {
+    color: #ff6958;
+    background-color: #f2b1b12a;
+}
+
+.green-btn-tag {
+    color: #2ecc71;
+    background-color: #a1e6a138;
+}
+
 
 /* End Helpers Classes */
 
