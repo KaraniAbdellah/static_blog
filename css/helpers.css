@@ -1,17 +1,16 @@
 /* Start Helpers Classes */
 
 .subscribe {
-    background-image: linear-gradient(to right, #b2dfff 0%, #88ceffc4  51%, #95d3fff2 100%);
+    background-image: linear-gradient(to right, #96cdf4 0%, #88ceff 51%, #38adfff2 100%);
     font-family: 'Fira Code', Monaco, Consolas, Ubuntu Mono, monospace;
     padding: 10px 20px;
     color: white;
     font-weight: 600;
     border-radius: 5px;
-    transition: 0.3s;
+    transition: 0.5s;
 }
 .subscribe:hover {
-    background-image: linear-gradient(to right,#95d3fff2  0%, #88ceffc4  51%, #b2dfff 100%);
-    
+    background-image: linear-gradient(to right,#83cbff  0%, #28a3fa  51%, #45b1ff 100%);
 }
 
 .blue-btn-tag {
