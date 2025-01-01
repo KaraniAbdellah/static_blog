@@ -40,6 +40,12 @@ body {
     margin: 20px 100px;
 }
 
+@media (max-width: 992px) {
+    .container {
+        margin: 10px 10px;
+    }
+}
+
 button {
     border: none;
     cursor: pointer;
@@ -59,10 +65,12 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    color: var(--black-color);
+    background-color: white;
     padding: 10px;
     margin-bottom: 60px;
-    color: var(--black-color);
     border-radius: var(--border-radius);
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
 }
 header::before {
     /* do the header here */
@@ -73,18 +81,38 @@ header .logo {
 }
 header ul {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
 }
 header ul li {
     margin-right: 15px;
     cursor: pointer;
     color: var(--black-color);
+    transition: 0.3s;
 }
-.topics_menu {
+header ul li:hover  a {
+    color: var(--aqua-color);
+}
+@media (max-width: 992px) {
+    header {
+        display: block;
+        height: 100%;
+        width: 100%;
+    }
+    header .logo {
+        text-align: center;
+        border-bottom: 2px solid var(--grey-light-color);
+        padding-bottom: 10px;
+        margin-bottom: 20px;
+    }
+    header button {
+        display: none;
+    }
+}
+/* .topics_menu {
     display: none;
-}
-header a.list_topics {
+} */
+/* header a.list_topics {
     display: block;
     position: relative;
 }
@@ -105,7 +133,7 @@ header .topics_menu li a {
 }
 header .topics_menu li a:hover {
     color: var(--aqua-color);
-}
+} */
 
 
 
@@ -121,6 +149,11 @@ section .about_me {
     margin: 20px auto;
     width: 50%;
     text-align: center;
+}
+@media (max-width: 992px) {
+    section .about_me {
+        width: 90%;
+    }
 }
 section .about_me p.name {
     font-size: 50px;
@@ -166,6 +199,12 @@ section .recent_post .cards {
     grid-template-columns: repeat(3, 1fr);
     gap: 10px;
     text-align: left !important;
+}
+@media (max-width: 992px) {
+    section .recent_post .cards {
+        grid-template-columns: repeat(1, 1fr);
+        row-gap: 10px;
+    }
 }
 .cards .card {
     border-radius: var(--border-radius);
@@ -276,6 +315,18 @@ footer .feedback .inputs textarea {
     padding: 10px;
     width: 350px;
     height: 50px;
+}
+@media (max-width: 992px) {
+    footer {
+        text-align: center !important;
+        flex-direction: column;
+    }
+    footer > div {
+        width: 100% !important;
+    }
+    footer .feedback .inputs input, footer .feedback .inputs textarea {
+        width: 100%;
+    }
 }
 /* End Footer */
 
