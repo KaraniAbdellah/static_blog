@@ -106,7 +106,7 @@ header ul li:hover a {
         text-align: center;
         border-bottom: 2px solid var(--grey-light-color);
         padding-bottom: 10px;
-        margin-bottom: 20px;
+        margin-bottom: 10px;
     }
     header button {
         display: none;
@@ -129,10 +129,9 @@ main .about_me {
     }
 }
 main .about_me p.name {
-    font-size: 50px;
+    font-size: 40px;
     font-weight: bold;
     color: var(--black-color);
-    font-family: 'Amiri', serif !important;
 }
 main .about_me p.description {
     color: var(--grey-color);
@@ -199,7 +198,6 @@ section .recent_post h1 {
     border-radius: var(--border-radius);
     background-color: rgb(247, 247, 247);
     padding: 10px;
-    cursor: pointer;
 } 
 .cards .card .image img {
     border-radius: var(--border-radius) var(--border-radius)  0 0;
@@ -218,12 +216,13 @@ section .recent_post h1 {
     margin-bottom: 6px;
     font-size: 18px;
     color: var(--black-color);
+    cursor: pointer;
 } 
 .cards .card .info .description {
     color: var(--grey-color);
-    font-weight: 100;
     font-size: 16px;
     margin: 15px 0;
+    font-weight: normal;
 }
 .cards .card .tags {
     margin-top: 10px;
@@ -270,7 +269,7 @@ footer .about_blog {
 }
 footer .about_blog p {
     color: grey;
-    font-weight: 100;
+    font-weight: normal;
 }
 footer .topics {
     width: 20%;
