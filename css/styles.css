@@ -19,7 +19,7 @@ ul {
 }
 
 :root {
-    --aqua-color: #14b7c7;
+    --aqua-color: #83cbff;
     --slate-color: #53748a;
     --deep-color: #1b394c;
     --midnight-color: #101a2c;
@@ -27,12 +27,14 @@ ul {
     --grey-light-color: #efefef;
     --black-color: #444;
     --border-radius: 5px;
+    --transition: 0.5s;
 }
 
 body {
     /* background-image: linear-gradient(to right, #232d60, #3f429c); */
     background-color: white;
-    font-family: 'Fira Code', Monaco, Consolas, Ubuntu Mono, monospace;
+    font-family: 'Fira Code', Monaco, Consolas, Ubuntu Mono, 'Cairo', 'Amiri', sans-serif;
+
     font-weight: normal;
 }
   
@@ -88,7 +90,7 @@ header ul li {
     margin-right: 15px;
     cursor: pointer;
     color: var(--black-color);
-    transition: 0.3s;
+    transition: var(--transition);
 }
 header ul li:hover  a {
     color: var(--aqua-color);
@@ -109,31 +111,7 @@ header ul li:hover  a {
         display: none;
     }
 }
-/* .topics_menu {
-    display: none;
-} */
-/* header a.list_topics {
-    display: block;
-    position: relative;
-}
-header a.list_topics:hover + .topics_menu, header .topics_menu:hover {
-    display: flex;
-    flex-direction: column;
-    position: absolute;
-    top: 60px;
-    left: 10px;
-    text-align: left;
-    padding: 10px;
-    background-color: white;
-    border-radius: var(--border-radius);
-    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
-}
-header .topics_menu li a {
-    transition: 0.3s;
-}
-header .topics_menu li a:hover {
-    color: var(--aqua-color);
-} */
+
 
 
 
@@ -159,8 +137,9 @@ section .about_me p.name {
     font-size: 50px;
     font-weight: bold;
     color: var(--black-color);
+    font-family: 'Amiri', serif !important;
 }
-section .about_me p.desc {
+section .about_me p.description {
     color: var(--grey-color);
     margin: 10px 0 30px;
     font-size: 18px;
@@ -169,15 +148,21 @@ section .about_me .email {
     background-color: var(--grey-light-color);
     border-radius: var(--border-radius);
     display: flex;
+    justify-content: space-between;
+    align-items: center;
     padding: 10px;
     margin-bottom: 50px;
+    transition: var(--transition);
 }
 section .about_me .email:hover {
-    box-shadow: var(--aqua-color) 0px 1px 3px, var(--aqua-color)px 1px 2px;
+    box-shadow: var(--aqua-color) 0px 0px 0px 0px, var(--aqua-color) 1px 1px 2px;
+}
+section .about_me .email input:focus::placeholder {
+    opacity: 0;
 }
 section .about_me .email input {
-    width: 100%;
     background-color: var(--grey-light-color);
+    width: 60%;
 }
 section .about_me .email input::placeholder {
     font-family: 'Fira Code', Monaco, Consolas, Ubuntu Mono, monospace;

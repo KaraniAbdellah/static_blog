@@ -28,6 +28,10 @@
     background-color: #a1e6a138;
 }
 
+.rtl {
+    direction: rtl;
+}
+
 
 /* End Helpers Classes */
 
