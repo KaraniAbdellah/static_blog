@@ -13,6 +13,10 @@
     background-image: linear-gradient(to right,#83cbff  0%, #28a3fa  51%, #45b1ff 100%);
 }
 
+.active {
+    color: #4aa4df !important;
+}
+
 .blue-btn-tag {
     color: #4aa4df;
     background-color: #a2c8f924;

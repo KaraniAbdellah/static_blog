@@ -62,14 +62,12 @@ input {
 
 /* Start Header */
 header {
-    margin-bottom: 100px;
     height: 60px;
     display: flex;
     justify-content: space-between;
     align-items: center;
     color: var(--black-color);
     padding: 10px;
-    margin-bottom: 60px;
     border-radius: var(--border-radius);
     box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
 }
@@ -116,10 +114,9 @@ header ul li:hover a {
 }
 /* End Header */
 
-/* Start Section */
-section {
-    display: flex;
-    flex-direction: column;
+/* Start Main */
+main {
+    margin-top: 60px;
 }
 main .about_me {
     margin: 20px auto;
@@ -169,6 +166,14 @@ main .about_me .email input::placeholder {
     font-size: 13px;
     word-spacing: 0px;
 }
+/* End Main */
+
+
+/* Start Section [Section exist also in techs.html && web_dev.html && news.html]*/
+section {
+    display: flex;
+    flex-direction: column;
+}
 section .recent_post {
     margin: 40px 0;
     padding: 20px;
@@ -178,8 +183,6 @@ section .recent_post h1 {
     color: var(--black-color);
     margin-bottom: 30px;
 }
-
-/* Start Cards [cards exit also in techs.html && web_dev.html && news.html]*/
 .cards {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -231,7 +234,6 @@ section .recent_post h1 {
     font-size: 12px;
     font-weight: bold;
 }
-/* End Cards [cards exit also in techs.html && web_dev.html && news.html]*/
 
 .recent_post button.load_more {
     background-image: linear-gradient(to right, #96cdf4 0%, #88ceff 51%, #38adfff2 100%);
@@ -244,6 +246,8 @@ section .recent_post h1 {
 .recent_post button.load_more:hover {
     background-image: linear-gradient(to right,#83cbff  0%, #28a3fa  51%, #45b1ff 100%);
 }
+/* End Section [Section exist also in techs.html && web_dev.html && news.html]*/
+
 /* End Section */
 
 
