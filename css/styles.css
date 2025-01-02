@@ -34,7 +34,6 @@ body {
     /* background-image: linear-gradient(to right, #232d60, #3f429c); */
     background-color: white;
     font-family: 'Fira Code', Monaco, Consolas, Ubuntu Mono, 'Cairo', 'Amiri', sans-serif;
-
     font-weight: normal;
 }
   
@@ -63,24 +62,28 @@ input {
 
 /* Start Header */
 header {
+    margin-bottom: 100px;
     height: 60px;
     display: flex;
     justify-content: space-between;
     align-items: center;
     color: var(--black-color);
-    background-color: white;
     padding: 10px;
     margin-bottom: 60px;
     border-radius: var(--border-radius);
     box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
 }
-header::before {
-    /* do the header here */
-}
 header .logo {
-    color: var(--black-color);
     font-size: 22px;
+    display: flex;
+    justify-content: center;
 }
+header .logo p {
+    margin-right: 10px;
+}
+header .logo img {
+    width: 120px;
+} 
 header ul {
     display: flex;
     justify-content: center;
@@ -92,7 +95,7 @@ header ul li {
     color: var(--black-color);
     transition: var(--transition);
 }
-header ul li:hover  a {
+header ul li:hover a {
     color: var(--aqua-color);
 }
 @media (max-width: 992px) {
@@ -119,7 +122,6 @@ header ul li:hover  a {
 
 /* Start Section */
 section {
-    background-color: rgb(255, 255, 255);
     display: flex;
     flex-direction: column;
 }
@@ -141,6 +143,7 @@ section .about_me p.name {
 }
 section .about_me p.description {
     color: var(--grey-color);
+    font-weight: normal;
     margin: 10px 0 30px;
     font-size: 18px;
 }
@@ -209,19 +212,17 @@ section .recent_post .cards {
     font-weight: bold;
     font-size: 15px;
 }
-.cards .card .info {
-
-}
 .cards .card .info .title {
     font-weight: bold;
     margin-bottom: 6px;
-    font-size: 20px;
+    font-size: 18px;
     color: var(--black-color);
 } 
 .cards .card .info .description {
     color: var(--grey-color);
     font-weight: 100;
     font-size: 16px;
+    margin: 15px 0;
 }
 .cards .card .tags {
     margin-top: 10px;
