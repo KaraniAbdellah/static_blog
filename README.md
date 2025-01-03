@@ -8,12 +8,10 @@ Welcome to aji_taaraf – the first Moroccan blog sharing the latest in IT and t
 
 ### About the Website
 <p>aji_taaraf is a space for:</p>
-<p>
-Sharing IT news, web development tips, and AI trends.
-Connecting with the Moroccan tech community.
-Exploring topics like design, cloud computing, and more.
-Our goal is to inspire learning and creativity while keeping you updated on the latest innovations. 🚀
-</p>
+<p>Sharing IT news, web development tips, and AI trends.</p>
+<p>Connecting with the Moroccan tech community.</p>
+<p>Exploring topics like design, cloud computing, and more.</p>
+<p>Our goal is to inspire learning and creativity while keeping you updated on the latest innovations. 🚀</p>
 
 ### Contact
 Feel free to reach out for questions, feedback, or collaborations:
