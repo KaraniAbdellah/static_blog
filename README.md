@@ -13,9 +13,10 @@ Welcome to aji_taaraf – the first Moroccan blog sharing the latest in IT and t
   <li>Connecting with the Moroccan tech community.</li>
   <li>Exploring topics like design, cloud computing, and more.</li>
 </ul>
+
 ### Contact
-Feel free to reach out for questions, feedback, or collaborations:
-Email: abdellah.karani@gmail.com
+
+Feel free to reach out for questions, feedback, or collaborations: **Email: abdellah.karani@gmail.com**
 
 
 **Made with ❤️ by Abdellah Karani**
